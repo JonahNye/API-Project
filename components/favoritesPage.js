@@ -1,9 +1,9 @@
 "use strict";
 
-const favortiesPage = {
+const favoritesPage = {
     
 }
 
 angular 
   .module("App")
-  .component("favoritePosts", favoritePosts)
+  .component("favoritesPage", favoritesPage)
