@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 
 const searchCriteria = {
     template: `
@@ -9,7 +9,7 @@ const searchCriteria = {
       const vm = this;
       vm.search = (recipe) => {
         Service.searchRecipe(recipe).then((data) => {
-          console.log(data)
+          console.log(data);
         })
       }
     }]
