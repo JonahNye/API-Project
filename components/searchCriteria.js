@@ -12,6 +12,7 @@ const searchCriteria = {
     vm.search = (recipe) => {
       Service.searchRecipe(recipe).then((response) => {
         vm.listOfItems = response;
+        console.log(vm.listOfItems)
       });
       
     }
