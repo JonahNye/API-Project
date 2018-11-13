@@ -13,6 +13,8 @@ const searchCriteria = {
       // $location.path('/recipeList'); 
 
     }
+
+
     
     vm.goFavorites  = () => {
       $location.path('/favoritesPage');
