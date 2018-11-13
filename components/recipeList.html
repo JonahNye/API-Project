@@ -1,5 +1,15 @@
-<section ng-repeat="list in $ctrl.listOfItems">
+<section ng-repeat="list in $ctrl.listOfItems track by $index">
     <section>
-        <p>{{list.recipe.label}}</p>
+        <p>Recipe for: {{list.recipe.label}}</p>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-heart"></i>
+        <section>
+            <section>
+                <p>Diet: {{list.recipe.dietLabels[0]}}</p>
+                <p>Total time: {{list.recipe.totalTime}} minutes</p>
+                <p>Link to recipe: {{list.recipe.url}}</p>
+            </section>
+            <img src="{{list.recipe.image}}">
+        </section>
     </section>
 </section>

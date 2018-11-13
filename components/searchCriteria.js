@@ -27,7 +27,7 @@ const searchCriteria = {
         console.log(response);
         vm.listOfItems = response;
       });  
-      
+
     }
     
   }]
