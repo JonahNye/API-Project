@@ -1,7 +1,8 @@
-"use strict";
+ "use strict";
 
 const searchCriteria = {
   template: `
+  <button ng-click="$ctrl.goFavorites();">Favorites</button>
   <input type="text" placeholder="recipe" ng-model="$ctrl.recipe">
   <label>By Molecule</label>
   <select ng-model="$ctrl.healthy">
@@ -19,7 +20,7 @@ const searchCriteria = {
   <button ng-click="$ctrl.search($ctrl.recipe, $ctrl.healthy, $ctrl.restrictions);">Search A Recipe</button>
   <recipe-list list-of-items="$ctrl.listOfItems"></recipe-list>
 `,
-  controller: ["Service", function (Service) {
+  controller: ["Service", "$location", function (Service, $location) {
     const vm = this;
             //concatenate?
     vm.search = (recipe, healthy, restrictions) => {
@@ -30,6 +31,10 @@ const searchCriteria = {
 
     }
     
+    vm.goFavorites  = () => {
+      $location.path('/favoritesPage');
+    }
+
   }]
 }
 angular
