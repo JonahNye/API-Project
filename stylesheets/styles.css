@@ -25,6 +25,10 @@ h1 {
     font-family: 'Patua One', cursive;
 }
 
+.subtitle-span {
+    color: #ed7d2d;
+}
+
 
 .favorites-page-btn {
     float: right;
@@ -32,6 +36,7 @@ h1 {
     color: #e4717a;
     margin-left: 2vw;
     margin-right: 2vh;
+    cursor: pointer;
 }
 
 .search-center-container {  /*used for centring the search region*/
@@ -43,15 +48,16 @@ h1 {
 
 .search-container { /* used for orienting search bar, "button", and advanced search option */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin-top: 8vh;
 }
 
 .carrot-arrow {  /* used for styling the search image. NOTE: requires hover over effect to alert user-- carrots aren't exactly synonymous with search */
-    margin-left: 2vw;
+    margin-top: 1vw;
     width: 165px;
     height: 90px;
+    cursor: pointer;
 }
 
 label, select {  /* display none to emulate hidden page */
@@ -63,7 +69,13 @@ label, select {  /* display none to emulate hidden page */
     height: 6vh;
     font-size: 20px;
     border: 2px solid #ed7d2d;
+    text-align: center;
 }
+
+
+
+/* END HOME SEARCH PAGE */
+
 
 
 .expandable {

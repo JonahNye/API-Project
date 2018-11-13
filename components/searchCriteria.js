@@ -4,7 +4,7 @@ const searchCriteria = {
   template: `
   <i class="material-icons favorites-page-btn" ng-click="$ctrl.goFavorites();">favorite</i>
   <header>
-    <h1>Recipease</h1>
+    <h1>Recip<span class="subtitle-span">ease</span></h1>
     <p class="sub-title">Search Recipes With Ease</p>
   </header>  
  <section class="search-center-container">
@@ -22,12 +22,12 @@ const searchCriteria = {
       <option>vegan</option>
       <option>vegetarian</option>
     </select>
-    <input class="search-bar" type="text" placeholder="recipe" ng-model="$ctrl.recipe">
+    <input class="search-bar" type="text" placeholder="Feeling Hungry?" ng-model="$ctrl.recipe">
     <img class="carrot-arrow" src="./images/carrot-arrow.png" ng-click="$ctrl.search($ctrl.recipe, $ctrl.healthy, $ctrl.restrictions);"/>
     <recipe-list list-of-ingredients="$ctrl.listOfIngredients" list-of-items="$ctrl.listOfItems"></recipe-list>
-   </section> 
+  </section> 
  </section>
-`,
+  `,
   controller: ["Service", "$location", function (Service, $location) {
     const vm = this;
 
@@ -39,6 +39,8 @@ const searchCriteria = {
       // $location.path('/recipeList'); 
 
     }
+
+
     
     vm.goFavorites  = () => {
       $location.path('/favoritesPage');
