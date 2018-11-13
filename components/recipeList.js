@@ -1,7 +1,10 @@
 "use strict";
 
 const recipeList = {
-
+    templateUrl: "components/recipeList.html",
+    bindings: {
+        listOfItems: "<"
+    }
 }
 
 angular
