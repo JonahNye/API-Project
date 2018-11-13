@@ -15,13 +15,13 @@ function Service($http) {
     })
   };
 
-  self.favorites = [
-      { title: "chicken", ingredients: "chicken"},
-      { title: "cheese", ingredients: "cheese"},
-      { title: "lasagna", ingredients: "noodles"}
-  ];
-  self.addFavorite = (newFavorite) => {
-    self.favorites.push(angular.copy(newFavorite));
+  self.favorites = [];
+  self.addFavorite = (list) => {
+    self.favorites.push(angular.copy(list));
+    console.log(self.favorites);
+  };
+  self.removeFavorite = (index) => {
+    self.favorites.splice(index, 1);
   };
   self.getFavorites = () => {
     return self.favorites;
