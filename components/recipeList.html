@@ -2,7 +2,7 @@
     <section>
         <p>Recipe for: {{list.recipe.label}}</p>
         <i class="fas fa-plus"></i>
-        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart" ng-click="$ctrl.add(list);"></i>
         <section>
             <section>
                 <p>Diet: {{list.recipe.dietLabels[0]}}</p>
