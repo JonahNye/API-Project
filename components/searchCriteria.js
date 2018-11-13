@@ -20,7 +20,7 @@ const searchCriteria = {
   <button ng-click="$ctrl.search($ctrl.recipe, $ctrl.healthy, $ctrl.restrictions);">Search A Recipe</button>
   <recipe-list list-of-items="$ctrl.listOfItems"></recipe-list>
 `,
-  controller: ["Service", function (Service, $location) {
+  controller: ["Service", "$location", function (Service, $location) {
     const vm = this;
             //concatenate?
     vm.search = (recipe, healthy, restrictions) => {
