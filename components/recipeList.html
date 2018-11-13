@@ -1,14 +1,14 @@
-<section ng-repeat="list in $ctrl.listOfItems track by $index">
-    <section>
+<section class="main-container" ng-repeat="list in $ctrl.listOfItems track by $index">
+    <section class="recipe">
         <p>Recipe for: {{list.recipe.label}}</p>
-        <i class="fas fa-plus" ng-click="$ctrl.expand($index)"></i>
+        <i directive class="fas fa-plus" ng-click="$ctrl.expand($index)"></i>
         <i class="fas fa-heart" ng-click="$ctrl.add(list);"></i>
-        <section ng-if="$ctrl.more">
+        <section class="expandable">
             <section>
                 <p>Diet: {{list.recipe.dietLabels[0]}}</p>
                 <p>Servings: {{list.recipe.yield}}</p>
                 <p>Link to recipe: {{list.recipe.url}}</p>
-                <ul ng-repeat="ingredient in list.recipe.ingredientLines">
+                <ul ng-repeat="ingredient in list.recipe.ingredientLines track by $index">
                     <li>{{ingredient}}</li>
               </ul>
             </section>
