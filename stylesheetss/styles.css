@@ -1,0 +1,91 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h3 {
+    text-align: center;
+    
+}
+
+#main-favorite {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#favorite {
+    height: auto;
+    width: 300px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+.favorite-info {
+    text-align: center;
+}
+
+#delete-btn {
+    float: right;
+}
