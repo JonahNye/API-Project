@@ -90,8 +90,22 @@ h3 {
     padding: 25px;
 }
 
-.favorite-info {
+.favorite-title {
     text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.favorite-info {
+
+}
+
+#link {
+    word-wrap: break-word;
+}
+
+#favorite-image {
+    margin-top: 20px;
 }
 
 #delete-btn {
