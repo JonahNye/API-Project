@@ -15,9 +15,6 @@ function Service($http) {
     })
   };
 
-
-
-
   self.favorites = [
       { title: "chicken", ingredients: "chicken"},
       { title: "cheese", ingredients: "cheese"},
@@ -30,7 +27,6 @@ function Service($http) {
     return self.favorites;
     // $location.path("/favoritesPage");
   };
-
   
 
 }
