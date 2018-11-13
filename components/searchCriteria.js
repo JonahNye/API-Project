@@ -28,7 +28,8 @@ const searchCriteria = {
       Service.searchRecipe(recipe, healthy, restrictions).then((response) => {
         console.log(response);
         vm.listOfItems = response;
-      });  
+      }); 
+      // $location.path('/recipeList'); 
 
     }
     
