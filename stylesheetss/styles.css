@@ -1,66 +1,7 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.expandable {
+    display: none;
+}
 
 h3 {
     text-align: center;
@@ -89,3 +30,4 @@ h3 {
 #delete-btn {
     float: right;
 }
+
