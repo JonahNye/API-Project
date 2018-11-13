@@ -7,8 +7,8 @@ const recipeList = {
     },
     controller: ["Service", function (Service) {
         const vm = this;
-        vm.add = (newFavorite) => {
-            Service.addFavorite(newFavorite);
+        vm.add = (list) => {
+            Service.addFavorite(list);
         };
 
     }]
