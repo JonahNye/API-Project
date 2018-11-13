@@ -5,7 +5,10 @@ const recipeList = {
     bindings: {
         listOfItems: "<"
     }
+
+
 }
+
 
 angular
    .module("App")

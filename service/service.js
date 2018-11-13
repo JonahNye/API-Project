@@ -2,10 +2,10 @@
 
 function Service($http) {
   const self = this;
-  self.searchRecipe = (recipe) => {
+  self.searchRecipe = (recipe, healthy, restrictions) => {
     return $http({
       method: "GET",
-      url: `https://api.edamam.com/search?q=${recipe}&app_id=852db20b&app_key=d6c63e84b8e3616fcc717a2217f25a5e`
+      url: `https://api.edamam.com/search?q=${recipe}&app_id=dae981e7&app_key=72c4ff67ecb8e8926f6914264d2e41bd&diet=${healthy}&health=${restrictions}`
     }).then((data) => {
       self.lists = data.data.hits;
       for (let i = 0; i < self.lists.length; i++) {
