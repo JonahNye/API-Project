@@ -1,4 +1,71 @@
 
+body {
+    font-family: 'Lato', sans-serif;
+    color: #5E5358;
+    background-color: #fff5ee;
+
+}
+
+header {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 50pt;
+    font-family: 'Patua One', cursive;
+
+}
+
+.sub-title {
+    font-size: 15pt;
+    font-family: 'Patua One', cursive;
+}
+
+
+.favorites-page-btn {
+    float: right;
+    font-size: 60pt;
+    color: #e4717a;
+    margin-left: 2vw;
+    margin-right: 2vh;
+}
+
+.search-center-container {  /*used for centring the search region*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.search-container { /* used for orienting search bar, "button", and advanced search option */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.carrot-arrow {  /* used for styling the search image. NOTE: requires hover over effect to alert user-- carrots aren't exactly synonymous with search */
+    margin-left: 2vw;
+    width: 165px;
+    height: 90px;
+}
+
+label, select {  /* display none to emulate hidden page */
+    display: none;
+}
+
+.search-bar {
+    width: 55vw;
+    height: 6vh;
+    font-size: 20px;
+    border: 2px solid #ed7d2d;
+}
+
+
 .expandable {
     display: none;
 }
@@ -30,4 +97,5 @@ h3 {
 #delete-btn {
     float: right;
 }
+
 
