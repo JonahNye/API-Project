@@ -61,7 +61,7 @@ h1 {
 }
 
 label, select {  /* display none to emulate hidden page */
-    display: none;
+    
 }
 
 .search-bar {
