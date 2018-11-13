@@ -12,8 +12,22 @@ function Service($http) {
         self.ingredients = self.lists[i].recipe.ingredientLines;
       }
         return self.lists;
-
     })
+  };
+
+
+
+
+  self.favorites = [
+      { title: "chicken", ingredients: "chicken"},
+      { title: "cheese", ingredients: "cheese"},
+      { title: "lasagna", ingredients: "noodles"}
+  ];
+  self.addFavorite = (newFavorite) => {
+    self.favorites.push(angular.copy(newFavorite));
+  };
+  self.getFavorites = () => {
+    return self.favorites;
   };
 
   
