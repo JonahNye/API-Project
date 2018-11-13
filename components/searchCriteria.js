@@ -18,7 +18,8 @@ const searchCriteria = {
     <option>vegetarian</option>
   </select>
   <button ng-click="$ctrl.search($ctrl.recipe, $ctrl.healthy, $ctrl.restrictions);">Search A Recipe</button>
-  <recipe-list list-of-items="$ctrl.listOfItems"></recipe-list>
+  <recipe-list list-of-ingredients="$ctrl.listOfIngredients" list-of-items="$ctrl.listOfItems"></recipe-list>
+  
 `,
   controller: ["Service", "$location", function (Service, $location) {
     const vm = this;

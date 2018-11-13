@@ -15,9 +15,6 @@ function Service($http) {
     })
   };
 
-
-
-
   self.favorites = [];
   self.addFavorite = (list) => {
     self.favorites.push(angular.copy(list));
@@ -30,7 +27,6 @@ function Service($http) {
     return self.favorites;
     // $location.path("/favoritesPage");
   };
-
   
 
 }
