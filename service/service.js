@@ -23,6 +23,9 @@ function Service($http) {
     self.favorites.push(angular.copy(list));
     console.log(self.favorites);
   };
+  self.removeFavorite = (index) => {
+    self.favorites.splice(index, 1);
+  };
   self.getFavorites = () => {
     return self.favorites;
     // $location.path("/favoritesPage");
