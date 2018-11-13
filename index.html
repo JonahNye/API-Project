@@ -9,19 +9,18 @@
 </head>
 <body>
 
-   
-    <!-- <a href="#!/recipeList"></a>
-    <a href="#!/favoritesPage"></a>
-    <ng-view></ng-view> -->
-    <search-criteria></search-criteria>
-
-    <favorites-page></favorites-page>
+    <a href="#!searchCriteria">search</a>
+    <a href="#!/recipeList">recipes</a>
+    <a href="#!/favoritesPage">favorites</a>
+    <ng-view></ng-view>
+    <!-- <search-criteria></search-criteria> -->
    
     
 
 
 
 <script src="https://code.angularjs.org/1.6.5/angular.js"></script>
+<script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
 <script src="module.js"></script>
 <script src="./components/favoritesPage.js"></script>
 <script src="./components/recipeList.js"></script>

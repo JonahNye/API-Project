@@ -28,6 +28,7 @@ function Service($http) {
   };
   self.getFavorites = () => {
     return self.favorites;
+    // $location.path("/favoritesPage");
   };
 
   
