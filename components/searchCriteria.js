@@ -14,7 +14,9 @@ const searchCriteria = {
 
     }
 
-
+    vm.sendData = () => {
+      return vm.listOfItems
+    }
     
     vm.goFavorites  = () => {
       $location.path('/favoritesPage');
