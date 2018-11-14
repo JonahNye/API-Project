@@ -19,6 +19,7 @@
                 <p>Diet: {{list.recipe.dietLabels[0]}}</p>
                 <p>Servings: {{list.recipe.yield}}</p>
                 <p>Link to recipe: </p><a id="results-link" href="{{list.recipe.url}}">{{list.recipe.url}}</a>
+                <p>Ingredients:</p>
                 <ul ng-repeat="ingredient in list.recipe.ingredientLines track by $index">
                     <li>{{ingredient}}</li>
                 </ul>

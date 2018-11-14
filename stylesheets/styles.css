@@ -33,12 +33,12 @@ h1 {
 
 
 .favorites-page-btn {
-    float: right;
-    font-size: 60pt;
+    position: absolute;
     color: #e4717a;
-    margin-left: 2vw;
-    margin-right: 2vh;
     cursor: pointer;
+    font-size: 80px;
+    right: 20px;
+    top: 20px;
 }
 
 .search-center-container {  /*used for centring the search region*/
@@ -111,7 +111,7 @@ select {
     font-size: 60px;
     position: absolute;
     right: 120px;
-    top: 20px;
+    top: 30px;
     cursor: pointer;
 }
 
@@ -193,6 +193,14 @@ h2 {
 
 
 /* END RECIPE LIST PAGE */
+
+#favorite-search-btn {
+    font-size: 60px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
 
 h3 {
     text-align: center;
