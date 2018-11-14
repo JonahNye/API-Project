@@ -1,4 +1,3 @@
-
 <i class="material-icons favorites-page-btn" ng-click="$ctrl.goFavorites();">favorite</i>
 <i class="fas fa-search" ng-click="$ctrl.goToSearch()"></i>
 
@@ -15,18 +14,19 @@
             </section>
         </section>
         <section class="expandable">
-            <section>
+            <section class="content-container">
                 <p>Diet: {{list.recipe.dietLabels[0]}}</p>
                 <p>Servings: {{list.recipe.yield}}</p>
-                <p>Link to recipe: </p><a id="results-link" href="{{list.recipe.url}}">{{list.recipe.url}}</a>
+                <a id="results-link" href="{{list.recipe.url}}" target="_blank">Link to recipe</a>
                 <p>Ingredients:</p>
                 <ul ng-repeat="ingredient in list.recipe.ingredientLines track by $index">
                     <li>{{ingredient}}</li>
                 </ul>
             </section>
-            
-            <img id="recipe-image" src="{{list.recipe.image}}">
-            
+            <section class="image-container">
+                <img id="recipe-image" src="{{list.recipe.image}}">
+            </section>
+
         </section>
     </section>
 </section>
