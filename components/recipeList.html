@@ -1,3 +1,5 @@
+<i class="material-icons favorites-page-btn" ng-click="$ctrl.goFavorites();">favorite</i>
+<i class="fas fa-search" ng-click="$ctrl.goToSearch()"></i>
 <section class="main-container" ng-repeat="list in $ctrl.listOfItems track by $index">
     <section class="recipe">
         <p>Recipe for: {{list.recipe.label}}</p>

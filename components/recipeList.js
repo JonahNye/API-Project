@@ -6,7 +6,7 @@ const recipeList = {
     //     listOfItems: "<",
     //     listOfIngredients: "<"
     // },
-    controller: ["Service", function (Service) {
+    controller: ["Service", "$location", function (Service, $location) {
         const vm = this;
         vm.listOfItems = Service.getResults().lists;
         vm.ingredients = Service.getResults().ingredients;
@@ -14,6 +14,13 @@ const recipeList = {
             Service.addFavorite(list);
         };
 
+        vm.goFavorites  = () => {
+            $location.path('/favoritesPage');
+        };
+
+        vm.goToSearch = () => {
+            $location.path('/searchCriteria');
+        };
 
     }]
 }

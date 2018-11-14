@@ -100,6 +100,14 @@ select {
     color: #5E5358;
 }
 
+.fa-search {
+    font-size: 60px;
+    position: absolute;
+    right: 120px;
+    top: 20px;
+    cursor: pointer;
+}
+
 
 
 
