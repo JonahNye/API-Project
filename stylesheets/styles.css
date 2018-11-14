@@ -84,6 +84,13 @@ h1 {
 
 }
 
+.Sous-Chef {
+    color: #5E5358;
+    font-size: 24pt;
+    text-decoration: #5E5358 underline;
+    cursor: pointer;
+}
+
 .diet-filter {
     display: flex;
     flex-direction: column;
@@ -139,9 +146,9 @@ h3 {
     font-weight: bold;
 }
 
-.favorite-info {
+/* .favorite-info {
 
-}
+} */
 
 #link {
     word-wrap: break-word;

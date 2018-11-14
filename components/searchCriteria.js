@@ -13,7 +13,21 @@ const searchCriteria = {
       }); 
     }
 
+    vm.buttonShown = true;
+    vm.searchShown = false;
 
+    vm.onShow = () => {
+      console.log("hi");
+
+      if (vm.searchShown === false && vm.buttonShown === true) {
+          vm.searchShown = true;
+          vm.buttonShown = false;
+      } 
+      else {
+          vm.searchShown = false
+          vm.buttonShown = true
+      }
+    }
     
     vm.goFavorites  = () => {
       $location.path('/favoritesPage');

@@ -7,10 +7,10 @@
   <section class="search-container">
     <input class="search-bar" type="text" placeholder="Feeling Hungry?" ng-model="$ctrl.recipe">
     <img class="carrot-arrow" src="./images/carrot-arrow.png" ng-click="$ctrl.search($ctrl.recipe, $ctrl.healthy, $ctrl.restrictions);"/>
-    <section class="advanced-search">
-      
+    <section ng-show="$ctrl.buttonShown" class="advanced-search">
+      <p ng-click="$ctrl.onShow();" class="Sous-Chef">Sous-Chef Search</p>
     </section>
-    <section class="hidden-advanced-search">
+    <section ng-show="$ctrl.searchShown" class="hidden-advanced-search">
      <section class="diet-filter">
       <label>By Diet</label>
        <select ng-model="$ctrl.healthy">
