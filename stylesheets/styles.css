@@ -210,9 +210,19 @@ h2 {
     word-wrap: break-word;
 }
 
+.content-container {
+    width: 50%;
+}
+
+.image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #recipe-image {
-    object-fit: contain;
-    margin-right: 25px;
+    border: 2px solid #5e5358
 }
 
 
