@@ -7,7 +7,7 @@
 <section class="main-container" ng-repeat="list in $ctrl.listOfItems track by $index">
     <section class="recipe">
         <section class="results-header">
-            <p>Recipe for: {{list.recipe.label}}</p>
+            <p id="recipe-title">{{list.recipe.label}}</p>
             <section class="results-icons">
                 <i directive class="fas fa-plus"></i>
                 <i close-directive class="fas fa-minus"></i>
@@ -18,12 +18,13 @@
             <section>
                 <p>Diet: {{list.recipe.dietLabels[0]}}</p>
                 <p>Servings: {{list.recipe.yield}}</p>
-                <p>Link to recipe: {{list.recipe.url}}</p>
+                <p>Link to recipe: </p><a id="results-link" href="{{list.recipe.url}}">{{list.recipe.url}}</a>
                 <p>Ingredients:</p>
                 <ul ng-repeat="ingredient in list.recipe.ingredientLines track by $index">
                     <li>{{ingredient}}</li>
                 </ul>
             </section>
+            
             <img id="recipe-image" src="{{list.recipe.image}}">
             
         </section>
