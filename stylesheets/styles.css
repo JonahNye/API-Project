@@ -123,12 +123,16 @@ select {
 h2 {
     text-align: center;
     font-size: 44px;
+    position: relative;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main-container {
     background-color: #E8EEF7;
     height: auto;
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -136,6 +140,7 @@ h2 {
     padding-left: 35px;
     padding-bottom: 30px;
     border: 2px solid #ED7D2D;
+    box-shadow: 5px 5px 3px #adadad;
 }
 
 .results-header {
@@ -144,6 +149,10 @@ h2 {
     align-items: center;
     font-size: 18px;
     font-weight: bold;
+}
+
+#recipe-title {
+    font-size: 26px;
 }
 
 .results-icons {
@@ -164,12 +173,21 @@ h2 {
 
 .expandable {
     display: none;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .fa-minus {
     font-size: 26px;
     display: none;
+}
+
+#results-link {
+    word-wrap: break-word;
+}
+
+#recipe-image {
+    object-fit: contain;
+    margin-right: 25px;
 }
 
 
