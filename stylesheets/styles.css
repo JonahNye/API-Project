@@ -253,6 +253,7 @@ h3 {
 #favorite-image {
     margin-top: 20px;
     position: relative;
+    left: 50%;
     transform: translateX(-50%);
 }
 
