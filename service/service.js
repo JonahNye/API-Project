@@ -2,13 +2,20 @@
 
 function Service($http) {
   const self = this;
-  self.searchRecipe = (recipe, healthy, restrictions) => {
 
+  self.getResults = () => {
+    return { 
+      lists: self.lists,
+      ingredients: self.ingredients
+    }
+  };
+
+  self.searchRecipe = (recipe, healthy, restrictions) => {
     if (recipe + !healthy + !restrictions) {
       return $http({
         method: "GET",  //don't be afraid to use "|"... may solve the problem with requiring full searches"
         url: `https://api.edamam.com/search?q=${recipe}&app_id=dae981e7&app_key=72c4ff67ecb8e8926f6914264d2e41bd`
-      }).then((data) => {
+      }).then((data) => { 
         self.lists = data.data.hits;
         for (let i = 0; i < self.lists.length; i++) {
           self.ingredients = self.lists[i].recipe.ingredientLines;

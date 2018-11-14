@@ -7,10 +7,10 @@ const searchCriteria = {
     vm.listOfItems;
     vm.search = (recipe, healthy, restrictions) => {
       Service.searchRecipe(recipe, healthy, restrictions).then((response) => {
-        console.log(response);
-        vm.listOfItems = response;
+        // console.log(response);
+        // vm.listOfItems = response;
+        $location.path("/recipeList");
       }); 
-      // $location.path('/recipeList'); 
     }
 
 
