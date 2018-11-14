@@ -3,8 +3,8 @@ body {
     font-family: 'Lato', sans-serif;
     color: #5E5358;
     background: linear-gradient(
-        rgba(255, 245, 238, 0.5),
-        rgba(275, 245, 238, 0.5)
+        rgba(255, 245, 238, 0.6),
+        rgba(275, 245, 238, 0.6)
     ), url(veggiespic.jpg);
     background-size: 100%;
 }
@@ -149,6 +149,7 @@ h2 {
     width: 200px;
     left: 50%;
     transform: translateX(-50%);
+    text-shadow: 2px 2px 4px rgb(255, 245, 238);
 }
 
 .main-container {
@@ -242,6 +243,8 @@ h2 {
 h3 {
     text-align: center;
     font-size: 44px;
+    text-shadow: 2px 2px 4px rgb(255, 245, 238);
+
 }
 
 #main-favorite {
@@ -278,6 +281,7 @@ h3 {
 #favorite-image {
     margin-top: 20px;
     position: relative;
+    left: 50%;
     transform: translateX(-50%);
 }
 
