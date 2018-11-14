@@ -3,6 +3,47 @@
 function Service($http) {
   const self = this;
   self.searchRecipe = (recipe, healthy, restrictions) => {
+
+    if (recipe + !healthy + !restrictions) {
+      return $http({
+        method: "GET",  //don't be afraid to use "|"... may solve the problem with requiring full searches"
+        url: `https://api.edamam.com/search?q=${recipe}&app_id=dae981e7&app_key=72c4ff67ecb8e8926f6914264d2e41bd`
+      }).then((data) => {
+        self.lists = data.data.hits;
+        for (let i = 0; i < self.lists.length; i++) {
+          self.ingredients = self.lists[i].recipe.ingredientLines;
+        }
+          return self.lists;
+      })
+    }
+
+   else if (recipe + !healthy + restrictions) {
+      return $http({
+        method: "GET",  //don't be afraid to use "|"... may solve the problem with requiring full searches"
+        url: `https://api.edamam.com/search?q=${recipe}&app_id=dae981e7&app_key=72c4ff67ecb8e8926f6914264d2e41bd&health=${restrictions}`
+      }).then((data) => {
+        self.lists = data.data.hits;
+        for (let i = 0; i < self.lists.length; i++) {
+          self.ingredients = self.lists[i].recipe.ingredientLines;
+        }
+          return self.lists;
+      })
+    }
+
+    else if (recipe + healthy + !restrictions) {
+      return $http({
+        method: "GET",  //don't be afraid to use "|"... may solve the problem with requiring full searches"
+        url: `https://api.edamam.com/search?q=${recipe}&app_id=dae981e7&app_key=72c4ff67ecb8e8926f6914264d2e41bd&diet=${healthy}`
+      }).then((data) => {
+        self.lists = data.data.hits;
+        for (let i = 0; i < self.lists.length; i++) {
+          self.ingredients = self.lists[i].recipe.ingredientLines;
+        }
+          return self.lists;
+    })
+  }
+
+    else if (recipe, healthy, restrictions) {
     return $http({
       method: "GET",  //don't be afraid to use "|"... may solve the problem with requiring full searches"
       url: `https://api.edamam.com/search?q=${recipe}&app_id=dae981e7&app_key=72c4ff67ecb8e8926f6914264d2e41bd&diet=${healthy}&health=${restrictions}`
@@ -13,6 +54,8 @@ function Service($http) {
       }
         return self.lists;
     })
+  }
+    
   };
 
   self.favorites = [];

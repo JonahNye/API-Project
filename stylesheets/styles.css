@@ -15,14 +15,16 @@ header {
 }
 
 h1 {
-    font-size: 50pt;
+    margin-top: -2vh;
+    font-size: 70pt;
     font-family: 'Patua One', cursive;
 
 }
 
 .sub-title {
-    font-size: 15pt;
+    font-size: 20pt;
     font-family: 'Patua One', cursive;
+    margin-top: -2vh;
 }
 
 .subtitle-span {
@@ -54,23 +56,50 @@ h1 {
 }
 
 .carrot-arrow {  /* used for styling the search image. NOTE: requires hover over effect to alert user-- carrots aren't exactly synonymous with search */
-    margin-top: 1vw;
-    width: 165px;
-    height: 90px;
+    margin-top: 4vh;
+    width: 200px;
+    height: 100px;
+    /* width: 12vw;
+    height: 12vh; */
     cursor: pointer;
 }
 
-label, select {  /* display none to emulate hidden page */
-    
-}
-
 .search-bar {
-    width: 55vw;
+    margin-top: 4vh;
+    width: 60vw;
     height: 6vh;
     font-size: 20px;
     border: 2px solid #ed7d2d;
     text-align: center;
 }
+
+.advanced-search {
+    margin-top: 6vh;
+    border: 2px solid #ed7d2d;
+    padding: 2vh 6vw 2vh 6vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.diet-filter {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+}
+
+.restrictions-filter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
+select {
+    color: #5E5358;
+}
+
 
 
 
