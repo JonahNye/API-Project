@@ -84,6 +84,15 @@ h1 {
 
 }
 
+#hidden-search-exit {
+    font-size: 12pt;
+    display: inherit;
+    position: relative;
+    top: 15%;
+    left: 25%;
+    color: #5E5358;
+}
+
 .Sous-Chef {
     color: #5E5358;
     font-size: 24pt;
@@ -165,10 +174,12 @@ h2 {
 .fa-heart {
     color: #e4717a;
     font-size: 26px;
+    cursor: pointer;
 }
 
 .fa-plus {
     font-size: 26px;
+    cursor: pointer;
 }
 
 .expandable {
@@ -179,6 +190,7 @@ h2 {
 .fa-minus {
     font-size: 26px;
     display: none;
+    cursor: pointer;
 }
 
 #results-link {
@@ -241,7 +253,6 @@ h3 {
 #favorite-image {
     margin-top: 20px;
     position: relative;
-    left: 50%;
     transform: translateX(-50%);
 }
 
