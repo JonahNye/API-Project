@@ -2,7 +2,7 @@
 
 const favoritesPage = {
   template: `
-  <i class="fas fa-search" ng-click="$ctrl.goToSearch()"></i>
+  <i id="favorite-search-btn" class="fas fa-search" ng-click="$ctrl.goToSearch()"></i>
   <h3>Favorites</h3>
   <section id="main-favorite">
     <section id="favorite" ng-repeat="favorite in $ctrl.favoritesList track by $index">
