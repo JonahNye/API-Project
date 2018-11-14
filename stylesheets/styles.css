@@ -7,6 +7,7 @@ body {
 }
 
 header {
+    margin-top: -2vh;
     position: absolute;
     left: 50%;
     top: 10%;
@@ -15,7 +16,6 @@ header {
 }
 
 h1 {
-    margin-top: -2vh;
     font-size: 70pt;
     font-family: 'Patua One', cursive;
 
@@ -65,7 +65,7 @@ h1 {
 }
 
 .search-bar {
-    margin-top: 4vh;
+    margin-top: 14vh;
     width: 60vw;
     height: 6vh;
     font-size: 20px;
@@ -73,8 +73,8 @@ h1 {
     text-align: center;
 }
 
-.advanced-search {
-    margin-top: 6vh;
+.hidden-advanced-search {
+    margin-top: 5vh;
     border: 2px solid #ed7d2d;
     padding: 2vh 6vw 2vh 6vw;
     background-color: white;
