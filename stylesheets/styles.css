@@ -84,6 +84,13 @@ h1 {
 
 }
 
+.Sous-Chef {
+    color: #5E5358;
+    font-size: 24pt;
+    text-decoration: #5E5358 underline;
+    cursor: pointer;
+}
+
 .diet-filter {
     display: flex;
     flex-direction: column;
@@ -113,11 +120,61 @@ select {
 
 /* END HOME SEARCH PAGE */
 
+h2 {
+    text-align: center;
+    font-size: 44px;
+}
 
+.main-container {
+    background-color: #E8EEF7;
+    height: auto;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    padding-left: 35px;
+    padding-bottom: 30px;
+    border: 2px solid #ED7D2D;
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.results-icons {
+    margin-right: 20px;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-heart {
+    color: #e4717a;
+    font-size: 26px;
+}
+
+.fa-plus {
+    font-size: 26px;
+}
 
 .expandable {
     display: none;
+    justify-content: space-around;
 }
+
+.fa-minus {
+    font-size: 26px;
+    display: none;
+}
+
+
+
+/* END RECIPE LIST PAGE */
 
 h3 {
     text-align: center;
@@ -138,7 +195,7 @@ h3 {
     margin-bottom: 25px;
     padding: 25px;
     margin-right: 15px;
-    background-color: #D6E3F8;
+    background-color: #E8EEF7;
 }
 
 .favorite-title {
@@ -147,9 +204,9 @@ h3 {
     font-weight: bold;
 }
 
-.favorite-info {
+/* .favorite-info {
 
-}
+} */
 
 #link {
     word-wrap: break-word;

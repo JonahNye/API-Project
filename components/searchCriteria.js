@@ -7,14 +7,21 @@ const searchCriteria = {
     vm.listOfItems;
     vm.search = (recipe, healthy, restrictions) => {
       Service.searchRecipe(recipe, healthy, restrictions).then((response) => {
-        // console.log(response);
-        // vm.listOfItems = response;
         $location.path("/recipeList");
       }); 
     }
+    vm.buttonShown = true;
+    vm.searchShown = false;
 
-    vm.sendData = () => {
-      return vm.listOfItems
+    vm.onShow = () => {
+      if (vm.searchShown === false && vm.buttonShown === true) {
+          vm.searchShown = true;
+          vm.buttonShown = false;
+      } 
+      else {
+          vm.searchShown = false
+          vm.buttonShown = true
+      }
     }
     
     vm.goFavorites  = () => {
