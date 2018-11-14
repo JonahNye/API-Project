@@ -73,6 +73,10 @@ h1 {
     text-align: center;
 }
 
+.search-bar:focus { 
+    box-shadow: 0 0 20px #a2ee98;
+}
+
 .hidden-advanced-search {
     margin-top: 5vh;
     border: 2px solid #ed7d2d;
