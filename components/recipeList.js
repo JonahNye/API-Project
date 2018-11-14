@@ -11,13 +11,7 @@ const recipeList = {
         vm.add = (list) => {
             Service.addFavorite(list);
         };
-        // vm.more = false
-        // vm.expand = (index) => {
-        //     vm.more = true
-        // }
-        // vm.collapse = () => {
-        //     vm.more = false
-        // }
+
 
     }]
 }
