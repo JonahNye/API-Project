@@ -6,20 +6,21 @@ const recipeList = {
     //     listOfItems: "<",
     //     listOfIngredients: "<"
     // },
-    controller: ["Service", function (Service) {
+    controller: ["Service", "$location", function (Service, $location) {
         const vm = this;
         vm.listOfItems = Service.getResults().lists;
         vm.ingredients = Service.getResults().ingredients;
         vm.add = (list) => {
             Service.addFavorite(list);
         };
-        // vm.more = false
-        // vm.expand = (index) => {
-        //     vm.more = true
-        // }
-        // vm.collapse = () => {
-        //     vm.more = false
-        // }
+
+        vm.goFavorites  = () => {
+            $location.path('/favoritesPage');
+        };
+
+        vm.goToSearch = () => {
+            $location.path('/searchCriteria');
+        };
 
     }]
 }

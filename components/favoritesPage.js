@@ -2,6 +2,7 @@
 
 const favoritesPage = {
   template: `
+  <i class="fas fa-search" ng-click="$ctrl.goToSearch()"></i>
   <h3>Favorites</h3>
   <section id="main-favorite">
     <section id="favorite" ng-repeat="favorite in $ctrl.favoritesList track by $index">
@@ -14,12 +15,15 @@ const favoritesPage = {
     </section>
   </section>
   `,
-  controller: ["Service", function (Service) {
+  controller: ["Service", "$location", function (Service, $location) {
     const vm = this;
     vm.favoritesList = Service.getFavorites();
     vm.remove = (index) => {
       Service.removeFavorite(index);
     };
+    vm.goToSearch = () => {
+      $location.path('/searchCriteria');
+    }
 
 
   }]
