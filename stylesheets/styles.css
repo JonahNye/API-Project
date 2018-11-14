@@ -2,7 +2,11 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #5E5358;
-    background-color: #fff5ee;
+    background: linear-gradient(
+        rgba(255, 245, 238, 0.5),
+        rgba(275, 245, 238, 0.5)
+    ), url(veggiespic.jpg);
+    background-size: 100%;
 }
 
 header {
