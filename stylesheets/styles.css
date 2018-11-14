@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    margin-top: -2vh;
+    margin-top: -1vh;
     position: absolute;
     left: 50%;
     top: 10%;
@@ -21,7 +21,6 @@ header {
 h1 {
     font-size: 70pt;
     font-family: 'Patua One', cursive;
-
 }
 
 .sub-title {
@@ -30,10 +29,14 @@ h1 {
     margin-top: -2vh;
 }
 
-.subtitle-span {
-    color: #ed7d2d;
+.subtitle-span1 {
+  text-shadow: 2px 2px 4px #ED7D2D;
 }
 
+.subtitle-span2 {
+    color: #ed7d2d;
+    text-shadow: 3px 3px 4px #5E5358;
+}
 
 .favorites-page-btn {
     position: absolute;
@@ -69,7 +72,7 @@ h1 {
 
 .search-bar {
     margin-top: 14vh;
-    width: 60vw;
+    width: 50vw;
     height: 6vh;
     font-size: 20px;
     border: 2px solid #ed7d2d;
@@ -88,6 +91,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    box-shadow: #5E5358;
 
 }
 
@@ -101,6 +105,7 @@ h1 {
 }
 
 .Sous-Chef {
+    margin-top: 5.25vh;
     color: #5E5358;
     font-size: 24pt;
     text-decoration: #5E5358 underline;
@@ -121,6 +126,7 @@ h1 {
 
 select {
     color: #5E5358;
+    border-color: #5E5358;
 }
 
 .fa-search {
@@ -213,6 +219,8 @@ h2 {
 
 /* END RECIPE LIST PAGE */
 
+
+
 #favorite-search-btn {
     font-size: 60px;
     position: absolute;
@@ -260,7 +268,6 @@ h3 {
 #favorite-image {
     margin-top: 20px;
     position: relative;
-    left: 50%;
     transform: translateX(-50%);
 }
 
